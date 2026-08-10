@@ -12496,7 +12496,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "CRGM Passive:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 233.68 100.33 0)
 			(hide yes)
 			(show_name no)

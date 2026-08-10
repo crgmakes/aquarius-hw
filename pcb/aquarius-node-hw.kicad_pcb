@@ -429,6 +429,12 @@
 		(path "/2500e019-c938-4e9e-9faa-9174484e036e/58c75851-578e-4a8c-a6e5-6f2118849d40")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14554,14 +14560,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+	(footprint "CRGM Passive:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 		(layer "F.Cu")
 		(uuid "61dcd4e6-87af-47c5-948a-d48bd04bf2cb")
 		(at 81.65 75.15 180)
 		(descr "2.0mm x 2.0mm Addressable RGB LED NeoPixel Nano, 12 mA, https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf")
 		(tags "LED RGB NeoPixel Nano PLCC-4 2020")
 		(property "Reference" "D1"
-			(at 0 -2 180)
+			(at -3.35 0.15 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3e0d0af7-9fa2-4d37-97a8-08d3e39ab319")
@@ -14575,7 +14581,6 @@
 		(property "Value" "WS2812B-2020"
 			(at 0 2.2 180)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "7c259367-3a87-4ac5-ab1f-14b2a351ea19")
 			(effects
 				(font
@@ -14615,7 +14620,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "01fa4e76-e545-4ed2-8ac0-8ac0cfbacdac")
+			(uuid "9b645985-09af-4ea7-8470-fc14616ade39")
 			(effects
 				(font
 					(size 1 1)
@@ -14628,7 +14633,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a4763734-dbcc-416c-96d3-7e44356b936e")
+			(uuid "d76e99aa-5378-47bb-abec-b6cf7614dffd")
 			(effects
 				(font
 					(size 1 1)
@@ -14641,7 +14646,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "15c2cd16-41ea-4bea-9633-394b9806a0a7")
+			(uuid "6c780a73-48a9-4e82-b2e4-50aef7a0e8b2")
 			(effects
 				(font
 					(size 1 1)
@@ -14654,7 +14659,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aaa959e8-138a-4115-bfa4-5f8561058cf3")
+			(uuid "593424f0-11ea-4e58-8dd1-10bf04552c9b")
 			(effects
 				(font
 					(size 1 1)
@@ -14667,7 +14672,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5575b6c4-abca-4eaf-8b36-fa2318bcabae")
+			(uuid "1e6d075a-7008-40e8-84dc-63c172f92f3e")
 			(effects
 				(font
 					(size 1 1)
@@ -14680,7 +14685,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7ea40310-7305-4b4b-ac43-62e31a23134c")
+			(uuid "31afca34-2bfc-43d6-9391-252bff5498c2")
 			(effects
 				(font
 					(size 1 1)
@@ -14692,6 +14697,12 @@
 		(path "/2500e019-c938-4e9e-9faa-9174484e036e/7e1c58a0-4fbc-42d2-b4df-78a7d6752fe6")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14705,6 +14716,26 @@
 			(uuid "04ed57c6-7b13-45b2-abdb-ebb1a2dad5bb")
 		)
 		(fp_line
+			(start -1.3 -1.15)
+			(end 1.6 -1.15)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "39da2c33-e819-46bf-9092-d32e0c2cabbf")
+		)
+		(fp_line
+			(start -1.3 -1.15)
+			(end -1.6 -0.85)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "8ef828d4-bee5-4da8-bfb4-bad82f1335d7")
+		)
+		(fp_line
 			(start -1.6 1.15)
 			(end 1.6 1.15)
 			(stroke
@@ -14716,7 +14747,7 @@
 		)
 		(fp_line
 			(start -1.6 1.15)
-			(end -1.6 -1.15)
+			(end -1.6 -0.85)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -14725,49 +14756,18 @@
 			(uuid "c68aa960-324f-476c-9fc0-31d6c7c83f15")
 		)
 		(fp_line
-			(start -1.6 -1.15)
-			(end 1.6 -1.15)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "39da2c33-e819-46bf-9092-d32e0c2cabbf")
-		)
-		(fp_circle
-			(center -1.606158 -1.14)
-			(end -1.526158 -1.14)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "32efd2a1-6fae-4aaa-b4e5-871e5037924e")
-		)
-		(fp_line
-			(start 1.52 1.25)
-			(end 1.52 -1.25)
+			(start 1.25 1.05)
+			(end 1.25 -1.05)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "1391a46d-0a03-4d0e-bf6c-06a645db891c")
+			(uuid "1bde1a8e-815d-48f4-9cd9-f29ea1f03b3e")
 		)
 		(fp_line
-			(start 1.52 -1.25)
-			(end -1.52 -1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7d4848df-98be-4bee-b11b-9b34f8678201")
-		)
-		(fp_line
-			(start -1.52 1.25)
-			(end 1.52 1.25)
+			(start 1.25 -1.05)
+			(end -1.3 -1.05)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -14776,14 +14776,24 @@
 			(uuid "16f5adef-81ae-42a7-9e68-d885180de7cf")
 		)
 		(fp_line
-			(start -1.52 -1.25)
-			(end -1.52 1.25)
+			(start -1.3 1.05)
+			(end 1.25 1.05)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "1bde1a8e-815d-48f4-9cd9-f29ea1f03b3e")
+			(uuid "7d4848df-98be-4bee-b11b-9b34f8678201")
+		)
+		(fp_line
+			(start -1.3 -1.05)
+			(end -1.3 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1391a46d-0a03-4d0e-bf6c-06a645db891c")
 		)
 		(fp_line
 			(start 1.1 -1)
@@ -14858,7 +14868,7 @@
 			(uuid "3912b1cd-78a4-464d-8231-bf0b3e3b2a13")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.0175 1.75 180)
+			(at 3.15 -2.2 180)
 			(layer "F.Fab")
 			(uuid "f69909c2-6c76-4162-a6de-2baf2ffb70cb")
 			(effects
@@ -19082,6 +19092,12 @@
 		(path "/769d4e06-da53-4a14-8173-369f034a88df/16a9a0b6-b048-499c-959a-357d555cddf5")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39897,12 +39913,12 @@
 				)
 			)
 		)
-		(property "LCSC1" "C190608"
-			(at 0 0 0)
+		(property "Package" ""
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8e88f150-5923-4370-b2cc-7f760dd68b8d")
+			(uuid "238c418b-cb90-4c35-a55d-c369fb44dbae")
 			(effects
 				(font
 					(size 1 1)
@@ -39910,12 +39926,25 @@
 				)
 			)
 		)
-		(property "LCSC2" "C94417"
-			(at 0 0 0)
+		(property "Sim.Device" "NPN"
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0a3fb06f-8ea7-4870-8e48-54564a5c3be8")
+			(uuid "f6041a70-a28e-4b74-9a2b-f3d86fbc7c92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c1b8e90-0c8b-4114-9b1e-a96a5690b458")
 			(effects
 				(font
 					(size 1 1)
@@ -39927,6 +39956,12 @@
 		(path "/2500e019-c938-4e9e-9faa-9174484e036e/75917ae1-4611-436d-a00e-7338936d6547")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42992,6 +43027,12 @@
 		(path "/769d4e06-da53-4a14-8173-369f034a88df/81388741-f690-40f0-bbea-0c1835808869")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45208,6 +45249,12 @@
 		(path "/769d4e06-da53-4a14-8173-369f034a88df/abddfb18-8f89-4af2-a864-dbfcc506dad5")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49473,6 +49520,12 @@
 		(path "/2500e019-c938-4e9e-9faa-9174484e036e/fb9f519c-786a-42df-a5fa-8ba526cdd5da")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -55647,6 +55700,12 @@
 		(path "/2500e019-c938-4e9e-9faa-9174484e036e/33fbafc7-e40f-43e5-811d-85fd5a937c64")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -57050,6 +57109,12 @@
 		(path "/769d4e06-da53-4a14-8173-369f034a88df/e85e7950-75d7-44b8-ac91-75b490821b14")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(net_tie_pad_groups "1, 2")
@@ -62435,6 +62500,12 @@
 		(path "/769d4e06-da53-4a14-8173-369f034a88df/298a6982-8069-4e45-b32a-8cc0b23e2b11")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(net_tie_pad_groups "1, 2")
